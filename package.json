@@ -19,5 +19,8 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-inliner": "^1.0.10"
+  },
+  "dependencies": {
+    "d3-polygon": "^1.0.6"
   }
 }
