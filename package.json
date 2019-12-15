@@ -1,0 +1,19 @@
+{
+  "name": "neighborhoods",
+  "version": "0.1.0",
+  "description": "Multi-city geolcation web app that tells you which neighborhood you're in.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:brianzelip/neighborhoods.git"
+  },
+  "keywords": [
+    "geolocation",
+    "Baltimore",
+    "New Orleans",
+    "Chicago",
+    "St. Louis"
+  ],
+  "author": "Brian Zelip <bzelip@gmail.com> (https://zelip.me/)",
+  "license": "MIT"
+}
