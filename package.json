@@ -19,7 +19,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "rm -rf dist .cache && parcel build src/index.html && npm run static",
-    "static": "cp humans.txt /dist"
+    "static": "cp src/humans.txt dist"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
