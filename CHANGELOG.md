@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2019-12-15
+
+### Added
+
+- data/NOLA.neighborhoods.geojson - geojson via [data.nola.gov](https://data.nola.gov/dataset/Neighborhood-Area-Boundary/7svi-kqix)
+- data/NOLA.neighborhoods.json - json via [data.nola.gov](https://data.nola.gov/dataset/Neighborhood-Area-Boundary/7svi-kqix)
+- data/NOLA.neighborhoods.sample.geojson for looking up the structure of the data w/ out loading such large files
+- npm and dependencies:
+
+  - parcel
+  - d3-polygon
+  - parcel-plugin-inliner
+
+- CHANGELOG.md
+
 ## [0.1.0] - 2019-11-25
 
 - branch: master
