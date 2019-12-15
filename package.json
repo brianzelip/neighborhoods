@@ -2,7 +2,7 @@
   "name": "neighborhoods",
   "version": "0.1.0",
   "description": "Multi-city geolcation web app that tells you which neighborhood you're in.",
-  "main": "index.html",
+  "main": "src/index.html",
   "repository": {
     "type": "git",
     "url": "git@github.com:brianzelip/neighborhoods.git"
@@ -17,8 +17,8 @@
   "author": "Brian Zelip <bzelip@gmail.com> (https://zelip.me/)",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "rm -rf dist .cache && parcel build index.html && npm run static",
+    "start": "parcel src/index.html",
+    "build": "rm -rf dist .cache && parcel build src/index.html && npm run static",
     "static": "cp humans.txt /dist"
   },
   "devDependencies": {
