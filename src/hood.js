@@ -7,7 +7,9 @@
 
   xmlhttp.onload = function() {
     console.log(
-      JSON.parse(this.responseText).features.map(f => f.properties.gnocdc_lab)
+      JSON.parse(this.responseText)
+        .features.map(f => f.properties.gnocdc_lab)
+        .sort()
     );
   };
 
