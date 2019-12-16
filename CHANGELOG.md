@@ -11,14 +11,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- data/NOLA.neighborhoods.geojson - geojson via [data.nola.gov](https://data.nola.gov/dataset/Neighborhood-Area-Boundary/7svi-kqix)
-- data/NOLA.neighborhoods.json - json via [data.nola.gov](https://data.nola.gov/dataset/Neighborhood-Area-Boundary/7svi-kqix)
-- data/NOLA.neighborhoods.sample.geojson for looking up the structure of the data w/ out loading such large files
-- npm and dependencies:
+Data
 
-  - parcel
-  - d3-polygon
-  - parcel-plugin-inliner
+- NOLA.neighborhoods.geojson via [data.nola.gov](https://data.nola.gov/dataset/Neighborhood-Area-Boundary/7svi-kqix)
+- NOLA.neighborhoods.json via [data.nola.gov](https://data.nola.gov/dataset/Neighborhood-Area-Boundary/7svi-kqix)
+- NOLA.neighborhoods.sample.geojson for looking up the structure of the data w/ out loading such large files
+- NOLA.hull.js for quicker lookup if point is in NOLA (quicker than looking through each neighborhood until finding a match)
+
+npm packages
+
+- parcel
+- d3-polygon
+- parcel-plugin-inliner
+
+src files
+
+- css/
+- hood.js
+- modules/
+
+Static
+
+- humans.txt
+
+Project
 
 - CHANGELOG.md
 
