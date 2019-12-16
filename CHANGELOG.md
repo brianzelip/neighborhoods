@@ -16,7 +16,8 @@ Data
 - NOLA.neighborhoods.geojson via [data.nola.gov](https://data.nola.gov/dataset/Neighborhood-Area-Boundary/7svi-kqix)
 - NOLA.neighborhoods.json via [data.nola.gov](https://data.nola.gov/dataset/Neighborhood-Area-Boundary/7svi-kqix)
 - NOLA.neighborhoods.sample.geojson for looking up the structure of the data w/ out loading such large files
-- NOLA.hull.js for quicker lookup if point is in NOLA (quicker than looking through each neighborhood until finding a match)
+- ~NOLA.hull.js for quicker lookup if point is in NOLA (quicker than looking through each neighborhood until finding a match)~ The hull as achieved via this library extends the actual boundary of the city. A better option for accurate quick lookup, is to use city boundary data provided by the city, as is the case with [NOLA](https://data.nola.gov/dataset/Orleans-Parish-Boundary/5jjm-ygfn)
+- NOLA.boundary.geojson via [data.nola.gov](https://data.nola.gov/dataset/Orleans-Parish-Boundary/5jjm-ygfn)
 
 npm packages
 
