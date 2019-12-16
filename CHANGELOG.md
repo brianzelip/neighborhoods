@@ -18,6 +18,7 @@ Data
 - NOLA.neighborhoods.sample.geojson for looking up the structure of the data w/ out loading such large files
 - ~NOLA.hull.js for quicker lookup if point is in NOLA (quicker than looking through each neighborhood until finding a match)~ The hull as achieved via this library extends the actual boundary of the city. A better option for accurate quick lookup, is to use city boundary data provided by the city, as is the case with [NOLA](https://data.nola.gov/dataset/Orleans-Parish-Boundary/5jjm-ygfn)
 - NOLA.boundary.geojson via [data.nola.gov](https://data.nola.gov/dataset/Orleans-Parish-Boundary/5jjm-ygfn)
+- nolaDataWork.js: going forward with the idea of "creating a rough box around the city for initial quick lookup of which city is the user closest to. The idea is that, if the user is in this box (represented by four coordinates around the city based on the highest and lowest lat and longs of the city), then look up the user's coord against that city's neighborhoods.
 
 npm packages
 
