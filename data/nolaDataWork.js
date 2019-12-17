@@ -23,4 +23,20 @@ console.log('highestLat:', highestLat);
 console.log('lowestLong:', lowestLong);
 console.log('highestLong:', highestLong);
 
-const box = {};
+/**
+ * high lat = north
+ * low lat = south
+ * high long = west
+ * low long = east
+ */
+
+const box = {
+  NW: [highestLong, highestLat],
+  NE: [lowestLong, highestLat],
+  SE: [lowestLong, lowestLat],
+  SW: [highestLong, lowestLat]
+};
+
+const polygon = [box.NW, box.NE, box.SE, box.SW];
+
+console.log('NOLA polygon!', polygon);
