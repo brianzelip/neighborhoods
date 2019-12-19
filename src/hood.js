@@ -34,7 +34,14 @@ const pointInNOLA = [-90.103324, 29.992867];
 
           const hoodName = HOOD[0].properties.gnocdc_lab;
 
-          console.log('hoodName!', hoodName);
+          const answerEl = document.querySelector('[data-answer]');
+
+          function titleCase(word) {
+            return `${word[0].toUpperCase()}${word.slice(1).toLowerCase()}`;
+          }
+          answerEl.innerHTML = `${titleCase(hoodName)}, New Orleans`;
+
+          console.log('hoodName!', hoodName, answerEl);
         };
         xmlhttp.send();
       }
