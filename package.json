@@ -1,6 +1,6 @@
 {
   "name": "neighborhoods",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Multi-city geolcation web app that tells you which neighborhood you're in.",
   "main": "src/index.html",
   "repository": {
