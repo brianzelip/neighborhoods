@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New Orleans box boundary",
+        "description": "A simple box boundary around the city of New Orleans, generated from the highest and lowest latitudes and longitudes in the Orleans Parish Boundary dataset (available at https://data.nola.gov/dataset/Orleans-Parish-Boundary/5jjm-ygfn)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.139958162707,
+              30.198665763337
+            ],
+            [
+              -89.625340394982,
+              30.198665763337
+            ],
+            [
+              -89.625340394982,
+              29.865610205086
+            ],
+            [
+              -90.139958162707,
+              29.865610205086
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
