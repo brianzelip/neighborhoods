@@ -17,7 +17,7 @@ const pointInNOLA = [-90.103324, 29.992867];
 
       console.log('point:::::::', point);
 
-      if (polygonContains(nolaBox, [-90.103324, 29.992867])) {
+      if (polygonContains(nolaBox, point)) {
         const xmlhttp = new XMLHttpRequest(),
           method = 'GET',
           url = 'https://data.nola.gov/resource/abhb-x4ch.geojson';
@@ -29,7 +29,7 @@ const pointInNOLA = [-90.103324, 29.992867];
 
           const HOOD = data.features.filter(feature => {
             const polygon = feature.geometry.coordinates[0][0];
-            return polygonContains(polygon, [-90.103324, 29.992867]);
+            return polygonContains(polygon, point);
           });
 
           const hoodName = HOOD[0].properties.gnocdc_lab;
@@ -44,6 +44,9 @@ const pointInNOLA = [-90.103324, 29.992867];
           console.log('hoodName!', hoodName, answerEl);
         };
         xmlhttp.send();
+      } else {
+        const answerEl = document.querySelector('[data-answer]');
+        answerEl.innerHTML = `Sorry, we don't do that city 🤷`;
       }
     }
 
