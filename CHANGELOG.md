@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2019-12-23
+
+- branch: chi
+- description: Add Chicago data
+
+### Added
+
+- chiBox.geojson
+- Chi.boundary.json
+- Chi.neighborhoods.geojson
+- Chi.neighborhoods.sample.geojson
+- Chi.neighborhoods.json
+
+https://data.cityofchicago.org/resource/y6yq-dbs2.geojson
+
+### Updated
+
+- nolaDataWork.js: Rename boxDataWork.js, refactor into a function that takes a city and spits out the polygon array
+
+
 ## [0.2.0] - 2019-12-19
 
 - branch: nola
